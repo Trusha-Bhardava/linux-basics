@@ -10,4 +10,18 @@ Group Management
    groups username
 
 * show group information:
-   /etc/group = (used for store group information)    
+   /etc/group = (used for store group information)
+
+* set password for groups:
+   gpasswd -a groupname
+
+* set password for users:
+   gpasswd -M username
+
+* delete group :
+   gruopdel groupname
+
+* delete user from group:
+   gpasswd -d username groupname
+            OR
+   deluser username groupname        
